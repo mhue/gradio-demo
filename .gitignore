@@ -1,1 +1,9 @@
+# Ignore environment files
+.env
+
+# Ignore gradio cache
 .gradio/
+
+# Python cache
+__pycache__/
+*.pyc
