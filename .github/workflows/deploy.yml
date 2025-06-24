@@ -32,3 +32,7 @@ jobs:
       run: gradio deploy
       env:
         HF_TOKEN: ${{ secrets.HF_TOKEN }}
+    - name: Push to hub
+      env:
+        HF_TOKEN: ${{ secrets.HF_TOKEN }}
+      run: git push https://mhue:$HF_TOKEN@huggingface.co/spaces/mhue/Demo main
